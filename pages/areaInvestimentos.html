@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="../assets/images/ico.ico">
+    <link rel="stylesheet" href="../assets/styles/poo.css">
+
+    <title>Menu de Investimentos</title>
+</head>
+<body>
+    <header>
+        <img id="logo-site" src="../assets/images/gateOption.png" alt="Logo do projeto e do site">
+        <div class="cabecalho-site">
+            <h1>Chegou sua <span>hora de investir!</span></h1>
+            <p>Finalmente chegou a sonhada hora de investirmos juntos no seu futuro. Abaixo iremos te mostrar as empresas disponíveis <br>e informações relacionadas as mesmas.</p>
+        </div>
+    </header>
+    <main>
+        <div class="menu-escolhas">
+            <h1>Suas opções de escolha:</h1>
+            <ul>
+                <li>Petrobrás</li>
+                <li>Itaú Unibanco</li>
+                <li>Vale</li>
+                <li>Ambev</li>
+                <li>BTG</li>
+                <li>Banco do Brasil</li>
+                <li>WEG</li>
+                <li>Bradesco</li>
+                <li>Santander</li>
+                <li>Itaúsa</li>
+            </ul>
+        </div>
+        <div class="formulario">
+            <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="get">
+                <legend>Painel de Investimentos</legend>
+                <label for="deposito">Digite o quanto deseja depositar</label>
+                <input type="number" name="depositoNum" id="" value="<?=$deposito?>">
+                <label for="numero">Digite a opção:</label>
+                <input type="number" name="num" id="idnum" value="<?=$opcao?>">
+                <label for="investir">Quanto deseja investir ?</label>
+                <input type="number" name="investir" id="investir" value="<?=$investir?>">
+                <label for="">Tempo do investimento</label>
+                <input type="number" name="tempo" id="idtempo" placeholder="Em meses" value="<?=$tempo?>">
+                <input type="submit" value="Investir" id="botao-submit" class="butao">
+            </form>
+        </div>
+    </main>
+</body>
+</html>
