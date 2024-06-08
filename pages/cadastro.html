@@ -7,37 +7,29 @@
     <link rel="shortcut icon" href="../assets/images/ico.ico" type="image/x-icon">
     <link rel="stylesheet" href="../assets/styles/cadastro.css">
 
-    <title>Cadastre-se</title>
+    <title>Cadastre-se agora mesmo</title>
 </head>
 <body>
-    <main class="main">
-        <div class="novouser">
-            <h1 class="tx1">Criar Nova Conta</h1>
-            <h3 class="tx2">Já tem Cadastro? <a href="login.html" class="login">Login</a></h3>
+    <main>
+        <header>
+            <img src="../assets/images/gateOption.png" alt="Logo do projeto e do site">
+        </header>
+        <div class="container-inputs">
+            <h1>Crie agora mesmo sua conta!</h1>
+                <label class="nome">Nome:</label>
+                <input type="text" class="inputs1">
+
+                <label class="nome">E-mail:</label>
+                <input type="email" class="inputs1">
+            
+                <label class="nome">Senha:</label>
+                <input type="password" class="inputs1">
+
+                <label class="nome">Data de Nascimento:</label>
+                <input type="date" name="data" id="data">
+            <h3>Você já tem cadastro? <a href="login.html">Clique aqui</a></h3>
+            <button class="but-entrar">Entrar</button>
         </div>
-        <div class="inputs">
-            <div class="container-input">
-                <label class="nome">NOME</label>
-                <input type="text" placeholder="Nome" class="inputs1">
-            </div>
-            <div  class="container-input">
-                <label class="nome">EMAIL</label>
-                <input type="email" placeholder="Email" class="inputs1">
-            </div>
-            <div  class="container-input">
-                <label class="nome">SENHA</label>
-                <input type="password" placeholder="Senha" class="inputs1">
-            </div>
-            <div>
-                <div class="container-input">
-                    <label class="nome">DATA DE NASCIMENTO</label>
-                    <input type="date" name="data" id="data">
-                </div>
-            </div>
-        </div>
-        
-        <a href="pginicial.html"><button class="but-entrar">Entrar</button></a>
     </main>
-    
 </body>
 </html>

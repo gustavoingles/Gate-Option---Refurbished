@@ -1,103 +1,74 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 * {
     font-family: "Josefin Sans", sans-serif;
-    padding: 0;
     margin: 0;
 }
 
-
 body {
-    background-image: linear-gradient(to bottom left, #A8541F, #91410E, #702A00, #511F00, #311300, #150800, #080300, #030100, #000, #000, #000, #010000, #150800, #311300, #511F00, #702A00, #91410E, #A8541F);
-    background-size: 100% 100vh;
-    background-repeat: no-repeat;
-    background-color: #000;
-    color: white;
+    background-color: rgb(0, 0, 0);
 }
 
-main {
-    height: 100vh;
-    width: 100%;
+img {
+    height: 7vh;
+    padding-left: 2%;
+    padding-top: 0.80vh;
+}
+
+h1 {
+    padding-bottom: 5%;
+}
+
+.container-inputs {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    width: 50vw;
+    margin: auto;
+    margin-top: 7%;
+    margin-bottom: 5%;
+    padding: 7%;
+    background-color: rgb(17, 24, 39);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
 }
 
-.novouser {
-    text-align: center;
-}
-.tx1 {
-    font-size: 55px;
+input {
+    margin-bottom: 3%;
 }
 
-.tx2 {
-    font-size: 18px;
+h3 {
+    margin-top: 4%;
 }
 
-.inputs {
-    margin-top: 3%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    
+a {
+    color: rgb(138, 142, 204);
+    text-decoration: none;
 }
 
-.container-input{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+a:hover {
+    text-decoration: underline;
 }
 
-.nome {
-    font-size: 14px;
-    margin-top: 11%;
-    color: #808080;
-}
- .login {
-    color: #ED962F;
-    transition: transform 0.3s ease, color 0.3s ease;
- }
-
- .login:hover {
-    transform: scale(0.7);
-    color: #91410E;
- }
-
-.inputs1 {
-    background-color: transparent;
-    color: #808080;
-    font-size: 18px;
-    height: 35px;
-    width: 250px;
-
-}
- #data {
-    background-color: transparent;
-    color: #808080;
-
-    font-size: 18px;
-    height: 35px;
-    width: 250px;
-}
-
-.but-entrar {
-    background-color: #ED962F;
-    font-weight: bold;
-    font-size: 17px;
-    margin-top: 18%;
-    height: 35px;
-    width: 180px;
-    cursor: pointer;
+button {
+    display: block;
+    margin: auto;
+    margin-top: 4%;
+    display: block;
+    background-color: rgb(255, 121, 6);
+    color: rgb(255, 255, 255);
     border: none;
-    transition: transform 0.5s ease, color 0.3s ease;
+    border-radius: 5px;
+    width: 8vw;
+    height: 6vh;
+    font-weight: bold;
 }
 
-.but-entrar:hover {
-    transform: scale(1.1);
-    background-color: #ed972fe0;
-    color: #030100;
+button:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: 0.25s ease;
 }
 
+/* TODO -> Readptar as propriedas de responsividade em TODAS as páginas da aplicação
 @media screen and (max-width: 1400px) and (max-height: 1050px) {
     .tx1 {
         font-size: 50px;
@@ -255,3 +226,4 @@ main {
         width: 120px;
     }
 }
+*/
