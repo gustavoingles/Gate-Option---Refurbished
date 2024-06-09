@@ -4,9 +4,8 @@
 }
 
 body {
-    background-image: linear-gradient(to top right, rgb(255, 121, 6), rgb(0, 0, 0) 15% 80%, rgb(255, 121, 6));
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-color: rgb(0, 0, 0);
+    overflow-x: hidden;
 }
 
 header {
