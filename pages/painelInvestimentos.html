@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <script src="../assets/scripts/redirecionar.js"></script>
+
     <link rel="shortcut icon" href="../assets/images/ico.ico">
     <link rel="stylesheet" href="../assets/styles/painelInvestimentos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,7 +18,8 @@
     <header>
         <div class="barra-navegacao">
             <img id="logo-site" src="../assets/images/gateOption.png" alt="Logo do projeto e do site">
-            <button id="botao-sair">Navegar</button>
+            <button class="botoes-barra-nav" onclick="irParaInvestir()">Portfólio</button>
+            <button class="botoes-barra-nav" onclick="irParaLogin()">Sair</button>
         </div>
         <div class="cabecalho-site">
             <h1>Chegou sua <span>hora de investir!</span></h1>

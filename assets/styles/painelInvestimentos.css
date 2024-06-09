@@ -15,6 +15,9 @@ main {
 .barra-navegacao {
     display: flex;
     justify-content: space-between;
+    background-color: rgb(15, 18, 20);
+    max-width: 100%;
+    height: 8.5vh;
 }
 
 #logo-site {
@@ -23,7 +26,7 @@ main {
     padding-top: 0.80vh;
 }
 
-#botao-sair {
+.botoes-barra-nav {
     margin-right: 2%;
     margin-top: 0.80vh;
     background: none;
@@ -32,7 +35,7 @@ main {
     color: rgb(255, 255, 255);
 }
 
-#botao-sair:hover {
+.botoes-barra-nav:hover {
     cursor: pointer;
     transform: scale(1.1);
     transition: 0.25s;
