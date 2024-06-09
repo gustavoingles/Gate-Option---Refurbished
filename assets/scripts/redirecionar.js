@@ -1,7 +1,7 @@
 function irParaInvestir() {
-    window.location.href = "painelInvestimentos.html"
+    window.location.href = "painelInvestimentos.php"
 }
 
 function irParaLogin() {
-    window.location.href = "login.html"
+    window.location.href = "login.php"
 }
