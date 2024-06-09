@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    font-family: "Josefin sans", "sans-serif";
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    overflow-x: hidden;
+}
+
+header {
+    background-color: rgb(15, 18, 20);
+}
+
+.botoes-menu-navegacao {
+    font-weight: normal;
+    color: rgb(255, 255, 255);
+    background-color: rgb(15, 18, 20);
+    border: 0px;
+    font-size: large;
+    margin-left: auto;
+    padding-right: 2%;
+}
+
+.botoes-menu-navegacao:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.25s;
+}
+
+.menu-navegacao {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+    height: 8.5vh;
+}
+
+#logo-site {
+    height: 7vh;
+    padding-left: 2%;
+    padding-top: 0.10%;
+}
+
+h1 {
+    font-weight: normal;
+    color: rgb(255, 255, 255);
+    padding-top: 6%;
+    padding-left: 2%;
+    padding-bottom: 5%;
+}
+
+table {
+    display: table;
+    margin: auto;
+    width: 80%;
+    border-collapse: collapse;
+    background-color: rgb(15, 18, 20);
+    text-align: center;
+    vertical-align: middle;
+}
+
+.variacao-positiva {
+    color: rgb(118, 232, 99);
+}
+
+.variacao-negativa {
+    color: rgb(255, 20, 0);
+}
+
+.grade-de-cotacoes {
+    text-align: left;
+    padding-bottom: 2.5%;
+    font-weight: bold;
+    font-size: larger;
+    color: rgb(255, 255, 255);
+}
+
+thead {
+    background-color: rgb(139, 69, 3);
+}
+
+thead th {
+    width: 20%;
+}
+
+#ponta-superior-esquerda {
+    border-top-left-radius: 5px;
+}
+
+#ponta-superior-direita {
+    border-top-right-radius: 5px;
+}
+
+#ponta-inferior-esquerda {
+    border-bottom-left-radius: 5px;
+}
+
+#ponta-inferior-direita {
+    border-bottom-right-radius: 5px;
+}
+
+th, td {
+    padding: 1%;
+    color: rgb(255, 255, 255);
+}
