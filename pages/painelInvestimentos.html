@@ -6,7 +6,6 @@
 
     <link rel="shortcut icon" href="../assets/images/ico.ico">
     <link rel="stylesheet" href="../assets/styles/painelInvestimentos.css">
-    <script src=""></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
@@ -22,22 +21,22 @@
         <div class="cabecalho-site">
             <h1>Chegou sua <span>hora de investir!</span></h1>
             <p>Finalmente chegou a sonhada hora de investirmos juntos no seu futuro. Abaixo iremos te mostrar as empresas disponíveis <br>e informações relacionadas as mesmas.</p>
+            <h1 id="segundo-h1">Suas opções de escolha:</h1>
         </div>
     </header>
     <main>
         <div class="menu-escolhas">
-            <h1>Suas opções de escolha:</h1>
             <ul>
-                <li>Petrobrás</li>
-                <li>Itaú Unibanco</li>
-                <li>Vale</li>
-                <li>Ambev</li>
-                <li>BTG</li>
-                <li>Banco do Brasil</li>
-                <li>WEG</li>
-                <li>Bradesco</li>
-                <li>Santander</li>
-                <li>Itaúsa</li>
+                <li><img src="../assets/images/logo-petrobras.png" alt="Logo da empresa Petrobrás"></li>
+                <li><img src="../assets/images/logo-itau.png" alt="Logo da empresa Itaú Unibanco"></li>
+                <li><img src="../assets/images/logo-vale.png" alt="Logo da empresa Vale"></li>
+                <li><img src="../assets/images/logo-ambev.png" alt="Logo da empresa Ambev"></li>
+                <li><img src="../assets/images/logo-btg.png" alt="Logo da empresa BTG Pactual"></li>
+                <li><img src="../assets/images/logo-banco-do-brasil.png" alt="Logo da empresa Banco do Brasil"></li>
+                <li><img src="../assets/images/logo-weg.png" alt="Logo da empresa WEG"></li>
+                <li><img src="../assets/images/logo-bradesco.png" alt="Logo da empresa Bradesco"></li>
+                <li><img src="../assets/images/logo-santander.png" alt="Logo da empresa Santander"></li>
+                <li><img src="../assets/images/logo-itausa.png" alt="Logo da empresa Itaúsa"></li>
             </ul>
         </div>
         <div class="formulario">
@@ -45,8 +44,20 @@
                 <legend>Painel de Investimentos</legend>
                 <label for="deposito">Digite o quanto deseja depositar</label>
                 <input type="number" name="depositoNum" id="" value="<?=$deposito?>">
-                <label for="numero">Digite a opção:</label>
-                <input type="number" name="num" id="idnum" value="<?=$opcao?>">
+                <label for="numero">Escolha alguma opção:</label>
+                <select name="decida" class="input-dropdown">
+                    <option selected disabled style="color: gray" value="invalido"></option>
+                    <option value="petrobras">Petrobrás</option>
+                    <option value="itau-unibanco">Itaú Unibanco</option>
+                    <option value="vale">Vale</option>
+                    <option value="ambev">Ambev</option>
+                    <option value="btg">BTG</option>
+                    <option value="banco-do-brasil">Banco do Brasil</option>
+                    <option value="weg">WEG</option>
+                    <option value="bradesco">Bradesco</option>
+                    <option value="santander">Santander</option>
+                    <option value="itausa">Itaúsa</option>
+                </select>
                 <label for="investir">Quanto deseja investir ?</label>
                 <input type="number" name="investir" id="investir" value="<?=$investir?>">
                 <label for="">Tempo do investimento</label>
