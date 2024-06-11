@@ -1,3 +1,22 @@
+<?php 
+    session_start();
+    include_once('config.php');
+    if ((!isset($_SESSION['email']) == true) and (!isset($_SESSION['senha']) == true)){
+        
+        unset($_SESSION['email']);
+        unset($_SESSION['senha']);
+        header('Location: login.php');
+    }
+    
+    //$logado2 = $_SESSION['nome'];
+    $logado = $_SESSION['email'];
+    $sql = "SELECT * FROM dados_investimento ORDER BY id DESC;";
+    $result = $conexao->query($sql);
+    
+    
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -18,7 +37,9 @@
         <div class="menu-navegacao">
             <img id="logo-site" src="../assets/images/gateOption.png" alt="Logo do projeto e do site">
             <button class="botoes-menu-navegacao" onclick="irParaInvestir()">Investir</button>
-            <button class="botoes-menu-navegacao" onclick="irParaLogin()">Sair</button>
+            <a href="login.php" class="botoes-menu-navegacao"><button class="botoes-menu-navegacao" onclick="irParaLogin()">Sair</button></a>
+            <!--<button class="botoes-menu-navegacao" onclick="irParaInvestir()">?></button>-->
+
         <div>
     </header>
     <main>
@@ -27,15 +48,27 @@
             <caption class="grade-de-cotacoes">Grade de Cotações</caption>
             <thead>
                 <tr>
-                    <th id="ponta-superior-esquerda">#</th>
-                    <th>Ativo</th>
-                    <th>Preço</th>
-                    <th>Variação</th>
-                    <th id="ponta-superior-direita">Cap. de Mercado</th>
+                    <th scope="col"  id="ponta-superior-esquerda">#</th>
+                    <th scope="col" >Empresa</th>
+                    <th scope="col" >Seu Investimento</th>
+                    <th scope="col" >Ações</th>
+                    <th scope="col" >Saldo Atual</th>
+                    <th  scope="col" id="ponta-superior-direita">Tempo (Mês)</th>
                 </tr>
             </thead>
             <tbody>
-                <tr>
+                <?php 
+                    while($user_data = mysqli_fetch_assoc($result)){
+                        echo "<tr>";
+                        echo "<td>" . $user_data['id']."</td>";
+                        echo "<td>". $user_data['empresa']."</td>";
+                        echo "<td>" . "R$ " . $user_data['investir']."</td>";
+                        echo "<td>" . $user_data['minhasacoes']."</td>";
+                        echo "<td>" . "R$ " . $user_data['lucromensal']."</td>";
+                        echo "<td>" . $user_data['tempo']."</td>";
+                    }
+                ?>
+                <!--<tr>
                     <td>1</td>
                     <td>ITUB3</td>
                     <td>R$27,70</td>
@@ -69,7 +102,7 @@
                     <td>R$92,33</td>
                     <td class="variacao-negativa">1.51%</td>
                     <td id="ponta-inferior-direita">U$1,25 Tri</td>
-                </tr>
+                </tr>-->
             </tbody>
         </table>
     </main>
