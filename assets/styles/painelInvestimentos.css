@@ -1,5 +1,6 @@
 * {
     margin: 0;
+    padding: 0;
     font-family: "Josefin sans", "sans-serif";
 }
 
@@ -14,6 +15,9 @@ main {
 .barra-navegacao {
     display: flex;
     justify-content: space-between;
+    background-color: rgb(15, 18, 20);
+    max-width: 100%;
+    height: 8.5vh;
 }
 
 #logo-site {
@@ -22,13 +26,19 @@ main {
     padding-top: 0.80vh;
 }
 
-#botao-sair {
+.botoes-barra-nav {
     margin-right: 2%;
     margin-top: 0.80vh;
     background: none;
     border: none;
     font-size: large;
     color: rgb(255, 255, 255);
+}
+
+.botoes-barra-nav:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.25s;
 }
 
 .cabecalho-site {
@@ -42,6 +52,13 @@ main {
     padding-bottom: 24px;
 }
 
+#segundo-h1 {
+    margin-right: 50%;
+    padding-top: 8%;
+    padding-bottom: 4%;
+    font-size: 2rem;
+}
+
 .cabecalho-site p {
     font-size: 1.25rem;
     font-weight: normal;
@@ -53,10 +70,13 @@ span {
 }
 
 .menu-escolhas {
-    display: flex;
-    flex-direction: column;
-    padding-top: 10%;
-    padding-bottom: 10%;
+    margin: auto;
+    margin-bottom: 7%;
+    background-color: rgba(255, 255, 255, 0.089);
+    border-radius: 5px;
+    max-width: 60vw;
+    padding-top: 5%;
+    padding-bottom: 5%;
     color: rgb(255, 255, 255);
 }
 
@@ -65,13 +85,24 @@ span {
     margin-bottom: 2.5%;
 }
 
-ul {
+.menu-escolhas ul {
+    display: flex;
+    margin: auto;
+    max-width: 70%;
+    flex-wrap: wrap;
+    gap: 30px;
     padding-left: 2%;
-}
-
-ul li {
+    padding-right: 2%;
     list-style-type: none;
     color: rgb(255, 255, 255)
+}
+.menu-escolhas li:hover {
+    transform: scale(1.05);
+    transition: 0.25s;
+}
+
+.menu-escolhas img {
+    width: 90px;
 }
 
 .formulario {
@@ -118,4 +149,10 @@ legend {
     cursor: pointer;
     transform: scale(1.2);
     transition: 0.25s ease;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
